@@ -14,7 +14,8 @@ export class TrendingComponent implements OnInit {
   ngOnInit() {
     this.service.trendingGifs()
     .subscribe(response => {
-      this.trendingGifs = response.data;
+      // tslint:disable-next-line: no-string-literal
+      this.trendingGifs = response['data'];
     });
   }
 

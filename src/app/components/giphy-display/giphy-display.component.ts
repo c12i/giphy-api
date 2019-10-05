@@ -19,8 +19,10 @@ export class GiphyDisplayComponent implements OnInit {
     this.service.searchGifs(this.searchQuery);
     this.service.getGifs()
     .subscribe(results => {
-      console.log(results.data);
-      this.gifs = results.data;
+      // tslint:disable-next-line: no-string-literal
+      console.log(results['data']);
+      // tslint:disable-next-line: no-string-literal
+      this.gifs = results['data'];
     }, error => {
       alert('not found :(');
     });

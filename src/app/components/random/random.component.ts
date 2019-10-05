@@ -14,7 +14,8 @@ export class RandomComponent implements OnInit {
   ngOnInit() {
     this.servive.randomGif()
     .subscribe(response => {
-      this.randomGif = response.data;
+      // tslint:disable-next-line: no-string-literal
+      this.randomGif = response['data'];
     });
   }
 
