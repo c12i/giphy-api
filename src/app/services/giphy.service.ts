@@ -1,3 +1,4 @@
+import { environment } from './../../environments/environment';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
@@ -6,7 +7,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class GiphyService {
 
-  private apiKey = 'PThtYIlJcYWclGK89wKGqwadWmOOLNIv';
+  private apiKey = environment.apiKey;
   private query = 'doggo';
 
   constructor(private http: HttpClient) { }
