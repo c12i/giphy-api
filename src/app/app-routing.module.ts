@@ -6,9 +6,9 @@ import { GiphyDisplayComponent } from './components/giphy-display/giphy-display.
 
 
 const routes: Routes = [
-  {path:"", component:TrendingComponent},
-  {path:"random", component:RandomComponent},
-  {path:"search", component:GiphyDisplayComponent} 
+  {path: '', component: TrendingComponent},
+  {path: 'random', component: RandomComponent},
+  {path: 'search', component: GiphyDisplayComponent}
 ];
 
 @NgModule({

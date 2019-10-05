@@ -7,7 +7,7 @@ import { GiphyService } from 'src/app/services/giphy.service';
   styleUrls: ['./trending.component.css']
 })
 export class TrendingComponent implements OnInit {
-  trendingGifs:any;
+  trendingGifs: any;
 
   constructor(private service: GiphyService) { }
 
@@ -15,7 +15,7 @@ export class TrendingComponent implements OnInit {
     this.service.trendingGifs()
     .subscribe(response => {
       this.trendingGifs = response.data;
-    })
+    });
   }
 
 }

@@ -9,13 +9,13 @@ import { GiphyService } from 'src/app/services/giphy.service';
 export class RandomComponent implements OnInit {
   randomGif: any;
 
-  constructor(private servive:GiphyService) { }
+  constructor(private servive: GiphyService) { }
 
   ngOnInit() {
     this.servive.randomGif()
     .subscribe(response => {
       this.randomGif = response.data;
-    })
+    });
   }
 
 }

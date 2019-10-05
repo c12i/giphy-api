@@ -10,21 +10,21 @@ export class GiphyDisplayComponent implements OnInit {
   gifs: any;
   searchQuery: string;
   notFound = false;
-  
-  constructor(private service:GiphyService) {}
+
+  constructor(private service: GiphyService) {}
 
   ngOnInit() {}
 
-  searchGifs(){
+  searchGifs() {
     this.service.searchGifs(this.searchQuery);
     this.service.getGifs()
     .subscribe(results => {
-      console.log(results.data);     
+      console.log(results.data);
       this.gifs = results.data;
     }, error => {
-      alert("not found :(")
-    })
-    this.searchQuery = "";
+      alert('not found :(');
+    });
+    this.searchQuery = '';
   }
 
 }
