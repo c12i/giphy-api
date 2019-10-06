@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 export class GiphyService {
 
   private apiKey = environment.apiKey;
-  private query = 'doggo';
+  private query: string;
 
   constructor(private http: HttpClient) { }
 
