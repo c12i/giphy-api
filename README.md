@@ -1,12 +1,11 @@
 # Giphy-Api.
 
-####  A simple github user search tool.
+####  Just trying out the giphy api.
 ![alt text](src/assets/p1.gif)
 
 ![alt text](src/assets/p2.gif)
 
 ![alt text](src/assets/p3.gif)
-
 
 ## Author
 [Collins Muriuki](https://github.com/collinsmuriuki)
